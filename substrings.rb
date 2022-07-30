@@ -1,5 +1,3 @@
-require 'pry-byebug'
-
 def substrings(string, dictionary)
     substring_hash = {}
     separated_strings = string.split(/[^[[:word:]]]+/)
@@ -22,6 +20,3 @@ def substrings(string, dictionary)
     end
     puts substring_hash
 end
-
-user_dictionary = ["below","down","go","going","horn","how","howdy","it","i","low","own","part","partner","sit"]
-substrings("Howdy partner, sit down! How's it going?", user_dictionary)
